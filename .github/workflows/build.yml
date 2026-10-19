@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup RenPy Web/Android Builder
-        uses: PyTom/renpy-build-action@v1
+        uses: pytom/renpy-build-action@v1
         with:
           game-path: '.'
 
       - name: Upload APK Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: CindyNovel-APK
           path: "**.apk"
